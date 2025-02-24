@@ -1,0 +1,24 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #2c3e50 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #ecf0f1 !important;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
