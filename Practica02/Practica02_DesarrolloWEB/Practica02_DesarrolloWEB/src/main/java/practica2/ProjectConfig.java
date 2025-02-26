@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package practica2; // Declara el paquete al que pertenece esta clase.
+package practica2; 
 
 /**
  *
@@ -48,7 +48,7 @@ public class ProjectConfig implements WebMvcConfigurer { // Declara la clase Pro
     }
 
     //Bean para poder acceder a los Messages.properties en código...
-    @Bean("messageSource") // Indica que este método define un bean de Spring con el nombre "messageSource".
+    @Bean("messageSource") // Método que define un bean de Spring con el nombre "messageSource".
     public MessageSource messageSource() { // Define un método que retorna un MessageSource.
         ResourceBundleMessageSource messageSource= new ResourceBundleMessageSource(); // Crea una instancia de ResourceBundleMessageSource.
         messageSource.setBasenames("messages"); // Establece el nombre base de los archivos de mensajes a "messages".
