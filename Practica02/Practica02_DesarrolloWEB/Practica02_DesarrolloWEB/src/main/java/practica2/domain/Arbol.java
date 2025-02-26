@@ -22,7 +22,8 @@ public class Arbol implements Serializable { // Declara la clase Arbol que imple
     private String ruta_imagen; // Declara el atributo ruta_imagen de tipo String.
     public boolean activo; // Declara el atributo activo de tipo boolean.
 
-    public Arbol() { // Declara un constructor sin argumentos.
+    //Constructor vacio 
+    public Arbol() { 
     }
 
     public Arbol(String nombre_comun, String tipo_flor, String dureza_madera, double altura_promedio, boolean activo) { // Declara un constructor con argumentos.
