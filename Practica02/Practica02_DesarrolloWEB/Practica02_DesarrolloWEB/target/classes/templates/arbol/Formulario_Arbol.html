@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/plantilla :: head}">
+    <title>Agregar Árbol</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<header th:replace="~{layout/plantilla :: header}"/>
+<section>
+    <div class="container">
+        <h2>Agregar Nuevo Árbol</h2>
+        <form th:action="@{/arbol/guardar}" th:object="${arbol}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nombre_comun">Nombre Común:</label>
+                <input type="text" class="form-control" th:field="*{nombre_comun}" id="nombre_comun" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_flor">Tipo de Flor:</label>
+                <input type="text" class="form-control" th:field="*{tipo_flor}" id="tipo_flor">
+            </div>
+            <div class="form-group">
+                <label for="dureza_madera">Dureza de la Madera:</label>
+                <input type="text" class="form-control" th:field="*{dureza_madera}" id="dureza_madera">
+            </div>
+            <div class="form-group">
+                <label for="altura_promedio">Altura Promedio:</label>
+                <input type="number" class="form-control" th:field="*{altura_promedio}" id="altura_promedio" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="edad_promedio">Edad Promedio:</label>
+                <input type="number" class="form-control" th:field="*{edad_promedio}" id="edad_promedio">
+            </div>
+            <div class="form-group">
+                <label for="imagenFile">Imagen del Árbol:</label>
+                <input type="file" class="form-control-file" name="imagenFile" id="imagenFile">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</section>
+<footer th:replace="~{layout/plantilla :: footer}"/>
+</body>
+</html>
